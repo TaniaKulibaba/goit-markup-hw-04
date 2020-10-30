@@ -1,0 +1,420 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --main-text-color: #212121;
+  --light-text-color: #ffffff;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --direction-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* =============== COMPONENTS =============== */
+.accent {
+  color: var(--accent-color);
+}
+
+.modal-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--direction-color);
+  padding: 10px 28px;
+
+  width: 200px;
+  min-height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--main-text-color);
+}
+/* =============== END COMPONENTS =============== */
+
+/* =============== HEADER =============== */
+.header {
+  padding: 24px 0 25px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-address {
+  margin-left: auto;
+  align-items: center;
+}
+
+.address {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.header-address {
+  display: flex;
+}
+
+.logo-dark {
+  margin-right: 93px;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo-dark {
+  font-family: var(-secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+.navigation-list-link,
+.header-mail-link,
+.header-tel-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+
+.navigation-list-link {
+  color: var(--main-text-color);
+}
+
+.link-current {
+  color: var(--accent-color);
+}
+
+.header-mail-link,
+.header-tel-link {
+  color: var(--second-text-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-mail-link:hover,
+.header-mail-link:focus,
+.header-tel-link:hover,
+.header-tel-link:focus {
+  color: var(--accent-color);
+}
+/* =============== END HEADER =============== */
+
+/* =============== HERO =============== */
+.hero {
+  text-align: center;
+}
+
+.hero .container {
+  padding: 200px 0;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* После добавления темного фона добавить .hero-title белый цвет color: #FFFFFF; */
+
+/* =============== END HERO =============== */
+
+/* =============== ОСОБЕННОСТИ =============== */
+.features .container {
+  padding: 94px 15px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.941;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  color: var(--main-text-color);
+}
+
+.features-list-name::before {
+  display: block;
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-list-name-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.features-list-name-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.features-list-name-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.features-list-name-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+
+.features-list-interpretation {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--second-text-color);
+}
+/* =============== END ОСОБЕННОСТИ =============== */
+
+/* =============== ЧЕМ МЫ ЗАНИМАЕМСЯ =============== */
+.field .container {
+  padding: 94px 15px;
+}
+
+.field-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* =============== END ЧЕМ МЫ ЗАНИМАЕМСЯ =============== */
+
+/* ================ НАША КОМАНДА ================ */
+.team .container {
+  padding: 94px 15px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-content {
+  padding: 30px 32px;
+}
+
+.team-list-name,
+.team-list-position {
+  font-size: 16px;
+  line-height: 1.188;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team-list-name {
+  font-weight: 500;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.team-list-position {
+  font-weight: 400;
+  color: var(--second-text-color);
+}
+/* ================ END НАША КОМАНДА ================ */
+
+/* ===================== FOOTER ===================== */
+.footer {
+  padding: 60px 0;
+  text-align: left;
+}
+
+.logo-light {
+  font-family: var(-secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.logo-light,
+.contact-list-address {
+  color: var(--main-text-color);
+}
+
+.contact-list-address,
+.contact-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/* После добавления темного фона изменить цвет Логотипа и Адреса на белый, а для почты и телефона изменить цвет на формат rgba для прозрачности 
+.logo-light,
+.contact-list-address {
+  color: var(--light-text-color);
+}
+
+.contact-list-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+*/
+
+/* ===================== PORTFOLIO ===================== */
+.portfolio .container {
+  padding: 94px 15px;
+}
+/* ================== PORTFOLIO BUTTONS ================== */
+.filter-btn-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.filter-btn-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn-list {
+  justify-content: center;
+}
+
+.filter-btn {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+
+  padding: 6px 22px;
+  min-height: 38px;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+}
+
+.filter-btn:active,
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--direction-color);
+  background-color: var(--accent-color);
+}
+/* ================== END PORTFOLIO BUTTONS ================== */
+
+/* ================== PORTFOLIO CARDS ================== */
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-cards-link {
+  width: 370px;
+}
+
+.portfolio-cards-link:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-cards-link:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.cards-link-content {
+  padding: 20px 24px;
+}
+
+.portfolio-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+
+  color: var(--main-text-color);
+}
+
+.portfolio-filter {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+
+  color: var(--second-text-color);
+}
