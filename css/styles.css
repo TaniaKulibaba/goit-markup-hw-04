@@ -261,9 +261,14 @@ img {
 /* =============== END ЧЕМ МЫ ЗАНИМАЕМСЯ =============== */
 
 /* ================ НАША КОМАНДА ================ */
-.team .container {
+.team {
+  width: 1600px;
   height: 708px;
   background-color: #f5f4fa;
+  margin: auto;
+}
+
+.team .container {
   padding: 94px 15px;
 }
 
@@ -296,7 +301,38 @@ img {
 .team-list-position {
   font-weight: 400;
   color: var(--second-text-color);
+  margin-bottom: 16px;
 }
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--direction-color);
+}
+
+.social-list-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-svg {
+  fill: var(--direction-color);
+}
+
+.social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
 /* ================ END НАША КОМАНДА ================ */
 
 /* ===================== FOOTER ===================== */
