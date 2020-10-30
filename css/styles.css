@@ -155,6 +155,41 @@ img {
 .header-tel-link:focus {
   color: var(--accent-color);
 }
+
+/*======================КОНВЕРТ&СМАРТФОН================*/
+.envelope-svg::before {
+  content: '';
+  background-image: url('../images/sprite.svg#icon-envelope.svg');
+  display: block;
+  width: 16px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.smartphone-svg::before {
+  content: '';
+  background-image: url('../images/sprite.svg#icon-smartphone.svg');
+}
+
+.clients-list-link:hover .clients-list-svg {
+  fill: var(--accent-color);
+}
+
+.clients-list-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.envelope-svg {
+  width: 16px;
+  min-height: 12px;
+  fill: #757575;
+}
+.smartphone-svg {
+  width: 10px;
+  min-height: 16px;
+  fill: #757575;
+}
 /* =============== END HEADER =============== */
 
 /* =============== HERO =============== */
@@ -206,7 +241,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-
   color: var(--main-text-color);
 }
 
@@ -244,7 +278,6 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-
   color: var(--second-text-color);
 }
 /* =============== END ОСОБЕННОСТИ =============== */
@@ -334,6 +367,52 @@ img {
 }
 
 /* ================ END НАША КОМАНДА ================ */
+
+/* ==================== КЛИЕНТЫ ===================== */
+.clients {
+  width: 1600px;
+  height: 370px;
+  margin: auto;
+}
+
+.clients .container {
+  padding: 94px 0;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-list-link:hover .clients-list-svg {
+  fill: var(--accent-color);
+}
+
+.clients-list-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list-svg {
+  height: 47px;
+  fill: #afb1b8;
+}
+
+/* ====================END КЛИЕНТЫ ===================== */
 
 /* ===================== FOOTER ===================== */
 .section-footer {
