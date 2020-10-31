@@ -485,7 +485,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.footer-sotial .social-list-link:not(:last-child) {
+.footer-sotial .social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
