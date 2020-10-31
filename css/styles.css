@@ -90,7 +90,7 @@ img {
   align-items: center;
 }
 
-.address {
+.header-address-item .address {
   margin-right: 50px;
 }
 
@@ -414,6 +414,7 @@ img {
 }
 
 .footer {
+  display: flex;
   padding: 60px 0;
   text-align: left;
 }
@@ -452,9 +453,51 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* ===================== соцсети футера ===================== */
+.footer-sotial {
+  margin-left: 70px;
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.footer-sotial .social-list {
+  margin-top: 20px;
+}
+
+.footer-sotial .social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-sotial .social-list-link:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-sotial .social-list-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-sotial .social-list-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--direction-color);
+}
 /* ===================== PORTFOLIO ===================== */
 .portfolio .container {
   padding: 94px 15px;
+  border-top: 1px solid #ececec;
 }
 /* ================== PORTFOLIO BUTTONS ================== */
 .filter-btn-list {
