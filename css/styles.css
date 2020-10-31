@@ -144,6 +144,8 @@ img {
 
 .header-mail-link,
 .header-tel-link {
+  display: flex;
+  align-items: center;
   color: var(--second-text-color);
 }
 
@@ -156,39 +158,28 @@ img {
   color: var(--accent-color);
 }
 
-/*======================КОНВЕРТ&СМАРТФОН================*/
-.envelope-svg::before {
-  content: '';
-  background-image: url('../images/sprite.svg#icon-envelope.svg');
-  display: block;
+.envelope-svg {
   width: 16px;
-  background-size: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--second-text-color);
 }
 
-.smartphone-svg::before {
-  content: '';
-  background-image: url('../images/sprite.svg#icon-smartphone.svg');
+.smartphone-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--second-text-color);
 }
 
-.clients-list-link:hover .clients-list-svg {
+.header-mail-link:hover .envelope-svg,
+.header-mail-link:focus .envelope-svg {
   fill: var(--accent-color);
 }
 
-.clients-list-link:hover {
-  border: 1px solid var(--accent-color);
-}
-
-.envelope-svg {
-  width: 16px;
-  min-height: 12px;
-  fill: #757575;
-}
-.smartphone-svg {
-  width: 10px;
-  min-height: 16px;
-  fill: #757575;
+.header-tel-link:hover .smartphone-svg,
+.header-tel-link:focus .smartphone-svg {
+  fill: var(--accent-color);
 }
 /* =============== END HEADER =============== */
 
@@ -435,7 +426,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.address {
+.section-footer .address {
   margin-top: 20px;
 }
 
