@@ -6,6 +6,7 @@
   --second-text-color: #757575;
   --accent-color: #2196f3;
   --direction-color: #ffffff;
+  --main-calm-color: #f5f4fa;
 }
 
 *,
@@ -116,7 +117,7 @@ img {
 }
 
 .logo-dark {
-  font-family: var(-secondary-font);
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -240,7 +241,7 @@ img {
   content: '';
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--main-calm-color);
   border-radius: 4px;
   margin-bottom: 30px;
   background-size: 70px 70px;
@@ -288,7 +289,7 @@ img {
 .team {
   width: 1600px;
   height: 708px;
-  background-color: #f5f4fa;
+  background-color: var(--main-calm-color);
   margin: auto;
 }
 
@@ -427,7 +428,7 @@ img {
 }
 
 .logo-light {
-  font-family: var(-secondary-font);
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
@@ -444,7 +445,7 @@ img {
 
 .logo-light,
 .contact-list-address {
-  color: #ffffff;
+  color: var(--direction-color);
 }
 
 .contact-list-address,
@@ -532,7 +533,7 @@ img {
 
   padding: 6px 22px;
   min-height: 38px;
-  background: #f5f4fa;
+  background: var(--main-calm-color);
   border: none;
   border-radius: 4px;
 }
@@ -555,7 +556,7 @@ img {
 
 .portfolio-cards-link {
   width: 370px;
-  background: #ffffff;
+  background: var(--direction-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
